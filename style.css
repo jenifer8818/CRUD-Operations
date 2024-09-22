@@ -1,0 +1,147 @@
+/* Basic styling for the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("back.avif");
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styling for the main container */
+fieldset {
+  background-color: hsl(270, 60%, 78%);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 25px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Legend style */
+h2{
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+/* Style for the form inputs and buttons */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+/* Styling for text inputs */
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+/* Button styling for Submit and Reset */
+input[type="button"], input[type="reset"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+input[type="button"] {
+  background-color: #28a745;
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: #ff3b3f;
+  color: white;
+}
+
+input[type="button"]:hover {
+  background-color: #218838;
+}
+
+input[type="reset"]:hover {
+  background-color: #dc3545;
+}
+
+/* Center alignment for the success/error messages */
+#msg {
+  padding: 10px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #155724;
+  margin-bottom: 20px;
+  text-align: center;
+  display: none;
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table headers */
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Table rows and cells */
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Alternating row color */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Action buttons for Edit and Delete */
+button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:nth-child(1) {
+  background-color: #ffc107; /* Edit button */
+}
+
+button:nth-child(2) {
+  background-color: #dc3545; /* Delete button */
+}
+
+/* Style for the error message */
+#error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}

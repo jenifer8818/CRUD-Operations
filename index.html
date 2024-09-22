@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CRUD Operation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <fieldset>
+      <h2>Form</h2>
+  <form id="form">
+    <input type="text" placeholder="Enter your Name " id="name" name="name" required> <br><br>
+    <input type="text" placeholder="Enter your Job " id="job" name="job" required> <br><br>
+    <input type="text" placeholder="Enter your Experience " id="exp" name="exp" required > <br><br>
+    <input type="button" value="Submit" id="btn" onclick="Submit()">
+    <input type="reset" value="Reset">
+  </form>
+  </fieldset>
+  <br>
+  <div id="msg">
+    
+  </div>
+  <br>
+
+  <fieldset>
+      <h2>Data from local Storage</h2>
+    <table border="1" id="table">
+      <tr>
+        <td class="col">Name</td>
+        <td class="col">Job</td>
+        <td class="col">Experience</td>
+        <td class="col">Action</td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <script src="script.js"></script>
+</body>
+</html>
